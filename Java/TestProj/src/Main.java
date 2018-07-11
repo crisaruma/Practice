@@ -18,5 +18,8 @@ public class Main{
         //  ファイルストリームによる書き込みテスト
         WriteStream.Main();
 
+        //  文字のエンコードの練習
+        Encode.Main();
+
     }
 }
