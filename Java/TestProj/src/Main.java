@@ -1,14 +1,13 @@
 
-import Lesson.ArrayPrint;
+import Lesson.*;
 
-
-public class HelloWorld {
+public class Main{
     public static void main(String... args){
-        System.out.println("Hello World");
+        //  HelloWorld
+        HelloWorld.Main();
 
         //  配列宣言とコンソール出力
         ArrayPrint.Main();
 
-        //
     }
 }
