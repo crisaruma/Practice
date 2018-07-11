@@ -64,10 +64,25 @@ public class ArrayPrint {
         System.out.println( "printArrayListTypeString : " + list.toString() );
 
         //  forで、1要素ずつ表示
-        for( String val : list )
-        {
+        for( String val : list ) {
             System.out.println( val );
         }
+
+        int arraySize = list.size();
+        int cntLoop = arraySize + 10;
+        System.out.println(" >>> ArrayList ForPrint : Size = " + arraySize + " , cntLoop = " + cntLoop + ";\n" );
+
+        try {
+            for(int i=0; i<cntLoop; i++ ){
+                System.out.println( "index(" + i + ") : " + list.get(i) );
+            }
+        }
+        catch( IndexOutOfBoundsException ex ) {
+            // 配列要素を超える参照を行うと、例外が発行されるので、例外メッセージを出力
+            System.out.println( "IndexOutOfBoundsException : " + ex.getMessage() );
+        }
+
+        System.out.println();
     }
 
     /**
