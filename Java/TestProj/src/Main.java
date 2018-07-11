@@ -9,5 +9,8 @@ public class Main{
         //  配列宣言とコンソール出力
         ArrayPrint.Main();
 
+        //  ファイルの読み込みテスト
+        ReadFile.Main();
+
     }
 }
