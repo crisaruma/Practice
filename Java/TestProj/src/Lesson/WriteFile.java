@@ -8,13 +8,17 @@ public class WriteFile {
     public static void Main(){
         System.out.println("+++ Practice WriteFile Begin\n");
 
+        String path = "data/WriteTest.txt";
         WriteFile thisObj = new WriteFile();
-        thisObj.WriteFile("data/WriteTest.txt");
+        thisObj.writeFile(path);
+
+        ReadFile readTest = new ReadFile();
+        readTest.readFile(path);
 
         System.out.println("\n--- Practice WriteFile Finish");
     }
 
-    public void WriteFile(String path){
+    public void writeFile(String path){
         File hdlFile = new File(path);
 
         FileWriter writeObj = null;
@@ -27,10 +31,6 @@ public class WriteFile {
             writeObj.write("WriteFile Test 3 \r\n");
 
             writeObj.close();
-
-            ReadFile readTest = new ReadFile();
-
-            readTest.Read(path);
         }
         catch(Exception ex){
             System.out.println( ex.getMessage() );

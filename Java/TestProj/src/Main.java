@@ -14,5 +14,9 @@ public class Main{
 
         //  ファイルの書き込みテスト
         WriteFile.Main();
+
+        //  ファイルストリームによる書き込みテスト
+        WriteStream.Main();
+
     }
 }

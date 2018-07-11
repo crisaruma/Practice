@@ -8,7 +8,7 @@ public class ReadFile {
         System.out.println("+++ Practice : Read File Begin\n");
 
         ReadFile thisObj = new ReadFile();
-        thisObj.Read( "data/ReadTest.txt" );
+        thisObj.readFile( "data/ReadTest.txt" );
 
         System.out.println("\n--- Practice : Read File Finish");
     }
@@ -17,7 +17,7 @@ public class ReadFile {
      * @brief ファイルの読み込みテスト
      * @param path ファイルパス
      */
-    public void Read(String path){
+    public void readFile(String path){
         File hdlFile = new File(path);
 
         FileReader readObj = null;
