@@ -2,18 +2,17 @@ package Lesson;
 
 public class ArrayPrint {
     public static void Main(){
-        ArrayPrint obj = new ArrayPrint();
-        System.out.println( obj.toString() );
-    }
+        System.out.println("+++ Practice Array Print\n");
 
-    @Override
-    public String toString() {
         int iArray[] = {0,1,2,3,4,5};
         String result = "";
         for( int i : iArray ){
             result += "LessonPrint : " + i;
             result += "\n";
         }
-        return result;
+        System.out.println( result );
+
+        System.out.println("\n--- Practice Array Print");
     }
+
 }
