@@ -12,5 +12,7 @@ public class Main{
         //  ファイルの読み込みテスト
         ReadFile.Main();
 
+        //  ファイルの書き込みテスト
+        WriteFile.Main();
     }
 }
